@@ -1,0 +1,314 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    margin: 0;
+  
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E1E; /* Dark gray matching background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+    color:white;
+    padding: 8px 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    height: 60px;
+    z-index: 1000;
+    width: 97%;
+}
+.logo
+{
+    color: rgb(225, 158, 34);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav
+{
+    display: flex;
+    gap: 16px;
+}
+nav a
+{
+color:white;
+text-decoration: none;
+padding: 0.5rem 1rem;
+transition: background-color 0.3s;
+}
+nav a:hover
+{
+    color: rgb(225, 158, 34);
+}
+
+.home
+{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 3rem;
+    height: 100vh;
+}
+.Introduction
+{
+    display: inline-block;
+    width: 50%;
+    color: #fff;
+    padding-right: 2rem;
+    flex: 1;
+}
+.Introduction p
+{
+    margin-bottom: 0px;
+}
+.Introduction h1 {
+    margin-top: 0px;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+.Introduction h2 {
+    font-size: 2rem;
+    color: orange;
+    margin-top: 4px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: white; /* Default icon color */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: orange; /* Turns the icon orange on hover */
+}
+
+.Introduction .social-icons i {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Introduction .social-icons i:hover {
+    color: orange;
+}
+
+.btn-outline {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 0;
+    background-color: orange;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #feba55; /* Light shade of orange */
+    transform: scale(1.05);
+}
+.stats
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-top: 3rem;
+    gap: 1rem;
+    background-color: #1E1E1E;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.stats h3{
+    color: orange;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+.stats p{
+    margin-top: 0;
+}
+.stats1
+{
+    margin-right: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    border-right: #fff 1px solid;
+}
+
+
+.image {
+    display: flex;
+    justify-content: center; /* Center the image inside the container */
+    align-items: center;
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 2000px;
+}
+
+.services
+{
+    display: block;
+    background-color: #1E1E1E;
+    height: 32rem;
+    padding: 3rem 2rem;
+}
+.services h1, .about h1, .projects h1, .contact h1
+{
+    color: orange;
+    text-align: center;
+    margin-top: 0;
+    padding: 2rem 0;
+}
+
+.Container
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 20px;
+}
+.item {
+    background: #0A192F;  /* Slightly lighter gray */
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+
+.item h3 {
+    color: orange;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.item p {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.about
+{
+    padding: 3rem 2rem;
+}
+.about p
+{
+    text-align: center;
+    margin:  auto;
+    line-height: 1.8;
+    color:white;
+    width: 85%;
+}
+.item img
+{
+    border-radius: 10px;
+    height: 250px; 
+    object-fit: cover;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.projects
+{
+    background-color: #1E1E1E;
+    padding: 3rem 2rem;
+}
+
+
+.contact {
+    padding: 3rem 2rem;
+    background-color: #121212;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.contact form label {
+
+    display: block;
+    margin-bottom: 0.5rem;
+    color:orange;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #1E1E1E;
+    color: white
+}
+
+.contact form button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #feba55; /* Light shade of orange */
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1E1E1E;
+    color: orange;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 900px) {
+    nav a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0; 
+    }
+
+    nav a span {
+        display: none;
+    }
+
+    nav a i {
+        font-size: 20px;
+    }
+}
